@@ -1,11 +1,14 @@
+import { exact } from 'prop-types';
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+
 import style from './NavigationItem.module.css';
-const navigationItem = ({ children, link, active }) => {
+const navigationItem = ({ children, link, exact }) => {
 	return (
 		<li className={style.NavigationItem}>
-			<a href={link} className={active ? style.active : null}>
+			<NavLink to={link} activeClassName={style.active} exact={exact}>
 				{children}
-			</a>
+			</NavLink>
 		</li>
 	);
 };
