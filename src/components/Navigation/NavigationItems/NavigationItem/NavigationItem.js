@@ -1,4 +1,4 @@
-import { exact } from 'prop-types';
+// import { exact } from 'prop-types';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
